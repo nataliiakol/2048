@@ -83,7 +83,7 @@ namespace Game2048.GUI
             }
 
             Random rnd = new Random();
-            int[] twoFour = new int[] { 2, 4 };
+            int[] twoFour = new int[] { 2, 4,8 };
             int rndSelectedPos = rnd.Next(emptyPosition.Count);
             var randomlySelectedPosition = emptyPosition[rndSelectedPos];
             field[randomlySelectedPosition.Key, randomlySelectedPosition.Value] = twoFour[rnd.Next(0, 1)];
